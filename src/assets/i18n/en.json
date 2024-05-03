@@ -1,0 +1,24 @@
+{
+  "GENERAL": {
+    "FULLNAME": "Paolo Bitini",
+    "PROFESSION": "Full-Stack Developer"
+  },
+  "PAGES": {
+    "HOME": {
+      "NAME": "Home"
+    },
+    "PROJECTS": {
+      "NAME": "Projects",
+      "FIRST": "First",
+      "SECOND": "Second"
+    },
+    "HOBBIES": {
+      "NAME": "Hobbies",
+      "MARTIAL_ARTS": "Martial Arts",
+      "MUSIC": "Music"
+    },
+    "ABOUT": {
+      "NAME": "About Me"
+    }
+  }
+}

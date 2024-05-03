@@ -1,0 +1,13 @@
+<div class="wrapper" webClickOutside (clickOutside)="opened = false">
+  <div class="lang-container">
+    <div class="selected" (click)="dropdownClicked()">
+      <img [src]="languageService.selectedLang.path">
+      <web-chevron [direction]="opened ? 'top':'bottom'"></web-chevron>
+    </div>
+    <div class="dropdown" [ngClass]="{'open': opened, 'closed': !opened}">
+      <div class="dropdown-item" *ngFor="let lang of languageService.filteredLanguages">
+        <img [src]="lang.path" (click)="languageSelected(lang)">
+      </div>
+    </div>
+  </div>
+</div>

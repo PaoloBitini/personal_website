@@ -1,0 +1,14 @@
+<div class="logo-container">
+  <img [ngStyle]="{
+        'margin': 10*size+'px '+ 15*size+'px '+ 10*size +'px  0px',
+        'height.px': 70*size,
+        'width.px': 70*size }" src="../../../assets/images/logo.svg" alt="logo" (click)="openBM()">
+  <div class="details" *ngIf="showDetails">
+    <span [ngStyle]="{'font-size.rem': 1.5*size,
+      'line-height.rem': 2*size,
+      'font-weight': 'bold',
+      'display': 'block'}">{{"GENERAL.FULLNAME" | translate}}</span>
+    <span [ngStyle]="{'font-size.rem': 1*size,
+      'display': 'block'}">{{"GENERAL.PROFESSION" | translate}}</span>
+  </div>
+</div>

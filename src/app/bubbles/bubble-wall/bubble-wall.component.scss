@@ -1,0 +1,63 @@
+.wall-container {
+  overflow: hidden;
+  height: 100%;
+}
+
+.wall {
+  position: relative;
+  height: 100%;
+  transition: transform 2s ease-in-out;
+
+  &.north {
+    transform: rotate(0);
+  }
+
+  &.north-east {
+    transform: rotate(45deg);
+  }
+
+  &.east {
+    transform: rotate(90deg);
+  }
+
+  &.south-east {
+    transform: rotate(135deg);
+  }
+
+  &.south {
+    transform: rotate(180deg);
+  }
+
+  &.south-west {
+    transform: rotate(-135deg);
+  }
+
+  &.west {
+    transform: rotate(-90deg);
+  }
+
+  &.north-west {
+    transform: rotate(-45deg);
+  }
+}
+
+.bubble {
+  position: absolute;
+  animation: rise 10s infinite ease-in,
+    transl 4s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes rise {
+  100% {
+    bottom: 100vw;
+  }
+}
+
+@keyframes transl {
+  0% {
+    transform: translateX(-25px);
+  }
+  100% {
+    transform: translate(25px);
+  }
+}

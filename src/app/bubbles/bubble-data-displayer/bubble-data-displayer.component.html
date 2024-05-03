@@ -1,0 +1,9 @@
+<div class="data-container" *ngIf="data">
+  <form [formGroup]="form">
+    <div class="data" *ngFor="let item of Object.keys(data.options)">
+      <label [for]="item">{{item}}: </label>
+      <input type="number" [formControlName]="item" [id]="item" [name]="item">
+    </div>
+  </form>
+  <button (click)="changeProp()">change</button>
+</div>

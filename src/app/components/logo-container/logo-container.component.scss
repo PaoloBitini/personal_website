@@ -1,0 +1,16 @@
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .logo {
+    margin: 10px 15px 10px 0px;
+    height: 70px;
+    width: 70px;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+  }
+}

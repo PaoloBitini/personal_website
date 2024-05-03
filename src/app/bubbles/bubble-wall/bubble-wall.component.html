@@ -1,0 +1,11 @@
+<div class="wall-container">
+  <div class="wall right" *ngIf="bubblesArray">
+    <div class="bubble" *ngFor="let data of bubblesArray" [ngStyle]="{
+    'bottom.%': options.minBottom,
+    'left.%': data.left,
+    'animation-duration': data.durationRise +'s, '+data.durationTransl+'s',
+    'animation-delay.s': data.delay}">
+      <web-bubble [radius]="data.radius"></web-bubble>
+    </div>
+  </div>
+</div>

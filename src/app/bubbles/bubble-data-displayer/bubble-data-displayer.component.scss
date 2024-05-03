@@ -1,0 +1,14 @@
+.data-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  .data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    input {
+      width: 20%;
+    }
+  }
+}

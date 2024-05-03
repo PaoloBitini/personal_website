@@ -1,0 +1,23 @@
+@import "../../../theme.scss";
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 10px;
+  color: whitesmoke;
+  transition: width 0.5s, float 0.5s, backround-color 0.5s;
+}
+
+.logo-container {
+  margin-left: 5vw;
+  transition: margin 0.5s ease-in-out;
+}
+
+.invisible {
+  margin-left: min(-500px, -10%);
+}
+
+.toolbar {
+  width: 40%;
+}

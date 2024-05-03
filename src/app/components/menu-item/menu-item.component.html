@@ -1,0 +1,8 @@
+<div class="item-container">
+  <div class="item">
+    <web-simple-menu-item [menuItemData]="data"></web-simple-menu-item>
+  </div>
+  <div class="dropdown" *ngIf="data?.menuItemList?.length > 0">
+    <web-dropdown-menu [dropdownItems]="data.menuItemList"></web-dropdown-menu>
+  </div>
+</div>

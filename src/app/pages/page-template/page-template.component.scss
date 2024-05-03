@@ -1,0 +1,15 @@
+@import "../../../theme.scss";
+
+$bg: rgba(
+  $color: $accent-color,
+  $alpha: 0.7,
+);
+.page-template {
+  padding: 1em;
+  box-sizing: border-box;
+  //background-color: $bg;
+  height: 100%;
+  color: white;
+  //box-shadow: 0 0 4em 4em $bg;
+  //clip-path: inset(0 -200px 0 -200px);
+}

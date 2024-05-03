@@ -1,0 +1,32 @@
+<div class="container" *ngIf="bubbleService?.isBubblesManagerOpen">
+
+  <div class="toolbar">
+    <div class="title">Bubbles Manager</div>
+    <div class="buttons">
+      <div class="button" (click)="toggle()">
+        <web-reduce-icon *ngIf="show else spread"></web-reduce-icon>
+        <ng-template #spread>
+          <web-spread-icon></web-spread-icon>
+        </ng-template>
+      </div>
+      <div class="button" (click)="close()">
+        <web-close-icon></web-close-icon>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="show" class="content">
+    <div class="selector">
+      <label for="bubble-selector">select: </label>
+      <select id="bubble-selector" #bubbleSelector (change)="changeCurrentItem(bubbleSelector.value)">
+        <option value="NOT_SELECTED">
+          - Not Selected -
+        </option>
+        <option *ngFor="let item of bubbleService.bubbleWalls | keyvalue" [value]="item.key">
+          {{item.key}}
+        </option>
+      </select>
+    </div>
+    <web-bubble-data-displayer *ngIf="currentItem" [data]="currentItem"></web-bubble-data-displayer>
+  </div>
+</div>

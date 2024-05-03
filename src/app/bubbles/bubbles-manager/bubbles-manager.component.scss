@@ -1,0 +1,41 @@
+.container {
+  background-color: darkgrey;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: x-small;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .title {
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+  select {
+    width: 70%;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  .buttons {
+    margin-right: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+    .button {
+      cursor: pointer;
+    }
+  }
+}

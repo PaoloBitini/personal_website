@@ -1,0 +1,21 @@
+.footer-container {
+  height: 100px;
+  .footer-image {
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: url(../../../assets/images/footer.svg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: bottom;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-container {
+    .footer-image {
+      background-size: cover;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.item-container {
+  display: block;
+  position: relative;
+}
+
+.dropdown {
+  visibility: hidden;
+  display: block;
+  position: absolute;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.25s;
+  z-index: 1;
+}
+
+.item-container:hover {
+  .dropdown {
+    visibility: visible;
+    max-height: 110px;
+  }
+}

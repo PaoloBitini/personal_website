@@ -1,0 +1,8 @@
+@import "../../../theme.scss";
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $primary-color;
+}

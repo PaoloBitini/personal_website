@@ -1,0 +1,15 @@
+.details {
+  display: flex;
+  flex-direction: column;
+
+  .fullname {
+    font-size: 5rem;
+    line-height: 6rem;
+    font-weight: bold;
+    display: block;
+  }
+  .profession {
+    font-size: 2.5rem;
+    display: block;
+  }
+}

@@ -1,0 +1,30 @@
+@import "../styles.scss";
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 1rem;
+
+  .background {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, $accent-color, $primary-color);
+  }
+
+  .main-content {
+    display: block;
+    width: 80%;
+    align-self: center;
+    flex: 1;
+  }
+
+  .draggable {
+    position: absolute;
+    cursor: grab;
+    z-index: 999;
+  }
+}

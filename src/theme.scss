@@ -1,0 +1,10 @@
+$primary-color: #454545;
+$secondary-color: #898989;
+$accent-color: #101010;
+
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+@font-face {
+  font-family: Monoid;
+  src: url(assets/fonts/Monoid-Regular.ttf);
+}

@@ -1,0 +1,56 @@
+@import "../../../theme.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.lang-container {
+  padding: 1rem;
+  display: block;
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    transition: max-height 0.25s;
+    overflow: hidden;
+    padding: 1rem;
+    gap: 1rem;
+    margin-left: -1rem;
+  }
+
+  .selected {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+}
+
+img {
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+}
+
+.closed {
+  visibility: hidden;
+  max-height: 0px;
+}
+
+.open {
+  visibility: visible;
+  max-height: 130px;
+}
+
+.item:hover {
+  background-color: $accent-color;
+}
