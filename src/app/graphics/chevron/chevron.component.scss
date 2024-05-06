@@ -1,3 +1,5 @@
+@import "../../../theme.scss";
+
 $animation-time: 0.25s;
 
 .chevron::before {
@@ -17,6 +19,7 @@ $animation-time: 0.25s;
   -o-transition: -o-transform $animation-time ease-out;
   -ms-transition: -ms-transform $animation-time ease-out;
   transition: transform $animation-time ease-out;
+  color: $secondary-color;
 }
 
 .chevron.right:before {

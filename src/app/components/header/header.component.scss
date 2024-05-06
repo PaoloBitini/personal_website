@@ -21,3 +21,12 @@
 .toolbar {
   width: 40%;
 }
+
+@media screen and (max-width: 576px) {
+  .header-container {
+    flex-direction: column;
+  }
+  .toolbar {
+    align-self: center;
+  }
+}

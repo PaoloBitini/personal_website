@@ -13,6 +13,7 @@ import { RouterModule } from '@angular/router';
 import { SimpleMenuItemComponent } from './simple-menu-item/simple-menu-item.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { BlindsComponent } from './blinds/blinds.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { TranslateModule } from '@ngx-translate/core';
     MenuItemComponent,
     SimpleMenuItemComponent,
     ToolbarComponent,
+    BlindsComponent,
   ],
   imports: [
     CommonModule,

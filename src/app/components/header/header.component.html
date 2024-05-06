@@ -5,6 +5,8 @@
   </div>
 
   <div class="toolbar">
-    <web-toolbar></web-toolbar>
+    <web-blinds [layout]="layout" [show]="isMobile()" [open]="!isMobile()">
+      <web-toolbar></web-toolbar>
+    </web-blinds>
   </div>
 </div>
