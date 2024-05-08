@@ -1,10 +1,10 @@
 <div [class]="'blind-container '+this.layout">
-  <div [class]="'blind-content '+this.layout" [class.open]=" this.open">
-    <ng-content></ng-content>
-  </div>
-  <div *ngIf="this.show" [class]="'handle '+this.layout">
+  <div *ngIf="this._show" [class]="'handle '+this.layout" (click)="handleClick()">
+    <web-chevron [direction]="direction"></web-chevron>
     <div [class]="'divider '+this.layout">
     </div>
-    <web-chevron [direction]="direction" (click)="handleClick()"></web-chevron>
+  </div>
+  <div [class]="'blind-content '+this.layout" [class.open]=" this.open">
+    <ng-content></ng-content>
   </div>
 </div>

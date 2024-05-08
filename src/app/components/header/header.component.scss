@@ -1,4 +1,5 @@
 @import "../../../theme.scss";
+@import "../../../bp.scss";
 
 .header-container {
   display: flex;
@@ -22,11 +23,11 @@
   width: 40%;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: $sm) {
   .header-container {
     flex-direction: column;
   }
   .toolbar {
-    align-self: center;
+    margin-left: 1rem;
   }
 }

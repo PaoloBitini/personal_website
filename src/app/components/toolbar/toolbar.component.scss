@@ -1,3 +1,5 @@
+@import "../../../bp.scss";
+
 .toolbar-container {
   display: flex;
   flex-direction: row;
@@ -6,7 +8,7 @@
   height: 100%;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: $sm) {
   .toolbar-container {
     flex-direction: column;
   }

@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 
+import { BreakpointsService } from 'src/app/services/breakpoints.service';
 import { BubbleService } from 'src/app/bubbles/bubble.service';
 import { Router } from '@angular/router';
 
@@ -8,20 +9,20 @@ import { Router } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent implements OnInit {
-  constructor(public bubbleService: BubbleService, public router: Router) {}
+export class HeaderComponent {
+  constructor(
+    public bubbleService: BubbleService,
+    public bpService: BreakpointsService,
+    public router: Router
+  ) {}
   layout: 'vertical' | 'horizontal' = 'horizontal';
-
+  isSmall = false;
   ngOnInit(): void {
     this.resize();
   }
 
   @HostListener('window:resize', ['$event'])
   resize() {
-    this.layout = this.isMobile() ? 'vertical' : 'horizontal';
-  }
-
-  isMobile(): boolean {
-    return window.innerWidth <= 576;
+    this.isSmall = this.bpService.isSmall();
   }
 }

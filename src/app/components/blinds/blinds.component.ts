@@ -7,8 +7,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class BlindsComponent implements OnInit {
   @Input() layout: 'vertical' | 'horizontal' = 'horizontal';
-  @Input() show = true;
   @Input() open = true;
+  @Input() set show(val: boolean) {
+    this._show = val;
+    if (!val) {
+      this.open = true;
+    }
+  }
+  public _show = true;
 
   direction: 'top' | 'bottom' | 'right' | 'left' = 'left';
 

@@ -3,7 +3,6 @@
 .blind-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
   height: 100%;
   width: 100%;
 
@@ -17,12 +16,12 @@
 
 .blind-content {
   overflow: hidden;
-
   &.vertical {
     max-height: 0;
     max-width: 100%;
     transition: max-height 0.2s ease-in-out;
   }
+
   &.horizontal {
     max-width: 0;
     max-height: 100%;
@@ -30,13 +29,13 @@
   }
 
   &.open {
+    overflow: visible;
     max-height: 100vh;
     max-width: 100%;
   }
 }
 
 .handle {
-  height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -62,6 +61,6 @@
   &.horizontal {
     clip-path: inset(-100% 0px);
     width: 0;
-    height: 30%;
+    height: 70%;
   }
 }

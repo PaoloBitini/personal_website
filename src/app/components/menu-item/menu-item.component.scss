@@ -1,3 +1,5 @@
+@import "../../../bp.scss";
+
 .item-container {
   display: block;
   position: relative;
@@ -17,5 +19,12 @@
   .dropdown {
     visibility: visible;
     max-height: 110px;
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .dropdown {
+    left: 100%;
+    top: 0;
   }
 }
